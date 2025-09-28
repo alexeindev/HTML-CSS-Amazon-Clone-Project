@@ -158,6 +158,7 @@ nav {
   flex: 1;
   justify-content: space-between;
   gap: 20px;
+  overflow: hidden;
 }
 
 .search-nav-ul li {
@@ -192,9 +193,46 @@ nav {
   flex-grow: 1;
 }
 
+.search-bar-select {
+  width: 80px;
+  height: 37px;
+  background-color: #e6e6e6;
+  border-radius: 10% 0 0 10%;
+  color: #555555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar-select p.select-title {
+  font-size: 11px;
+}
+
+.search-bar-select::after {
+  content: "\25bc";
+  color: #555555;
+  font-size: 8px;
+  margin-left: 2px;
+}
+
 .search-nav-li.search-bar input {
   width: 100%;
+  height: 37px;
   padding: 10px;
+  border: white;
+}
+
+.search-nav-li .search-bar-icon {
+  width: 45px;
+  height: 37px;
+  background-color: #febd69;
+  border-radius: 0 10% 10% 0;
+}
+
+.search-nav-li .search-bar-icon img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
 }
 
 .search-nav-li.search-bar input:focus {
@@ -230,18 +268,34 @@ nav {
 }
 
 .secondary-nav-ul {
-  width: 100%;
   display: flex;
-  justify-content: space-around;
-  font-size: 14px;
-  font-weight: 500;
+  width: 100%;
 }
 
-.secondary-nav-li.todo-menu {
+.nav-hidden-container {
   display: flex;
+  overflow: hidden;
+}
+
+.secondary-nav-li {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 5px 8px;
+  font-size: 14px;
+}
+
+.secondary-nav-li.secondary-nav-li.todo-menu p {
+  font-weight: 800;
+  margin-left: 5px;
 }
 
 .secondary-nav-li.todo-menu img {
   width: 17px;
   height: 17px;
+}
+
+.secondary-nav-li.free-us-shipping {
+  margin-left: auto;
+  font-weight: 800;
 }
