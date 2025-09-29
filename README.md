@@ -32,4 +32,4 @@ It does not aim to reproduce Amazon’s functionality, but rather to replicate t
 ## How to Use
 1. Clone the repository:
    ```bash
-   https://github.com/alexeindev/HTML-CSS-Amazon-Clone-Project.git
+   git clone https://github.com/alexeindev/HTML-CSS-Amazon-Clone-Project.git
