@@ -162,6 +162,7 @@ nav {
 
 li:hover {
   border: 1px solid white;
+  cursor: pointer;
 }
 
 .search-nav-ul {
@@ -179,9 +180,7 @@ li:hover {
   align-items: center;
   font-size: 12px;
 }
-.search-nav-li {
-  cursor: pointer;
-}
+
 .search-nav-ul li p {
   display: flex;
   flex-direction: column;
@@ -320,7 +319,7 @@ li:hover {
 /* Main Section */
 
 .main-section {
-  width: 1300px;
+  max-width: 1300px;
   flex: 1;
   align-self: center;
   background-color: rgb(227, 230, 230);
@@ -361,13 +360,14 @@ li:hover {
 }
 
 /* Grid */
+
 .grid-cards-wrapper {
-  width: calc(100% - 40px);
+  max-width: calc(100% - 40px);
   margin: 0 20px;
   position: absolute;
   top: 250px;
   display: grid;
-  grid-template: repeat(2, 400px) / repeat(4, 300px);
+  grid-template: repeat(2, 400px) / repeat(auto-fit, minmax(300px, 300px));
   gap: 20px;
   justify-items: center;
 }
