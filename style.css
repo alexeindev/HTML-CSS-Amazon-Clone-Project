@@ -160,6 +160,10 @@ nav {
   background-color: #141921;
 }
 
+li:hover {
+  border: 1px solid white;
+}
+
 .search-nav-ul {
   display: flex;
   flex: 1;
@@ -194,6 +198,10 @@ nav {
   margin: 1px 8px 0px 6px;
   padding: 4px 0px;
   width: 100px;
+}
+
+.search-nav-logo:hover {
+  border: 1px solid white;
 }
 
 .search-nav-li.search-bar {
@@ -272,6 +280,7 @@ nav {
 
 .secondary-nav {
   background-color: #232e3e;
+  padding: 0px 10px;
 }
 
 .secondary-nav-ul {
@@ -288,8 +297,9 @@ nav {
   display: flex;
   align-items: center;
   white-space: nowrap;
-  margin: 5px 8px;
-  font-size: 14px;
+  height: 100%;
+  padding: 8px 8px;
+  font-size: 13px;
 }
 
 .secondary-nav-li.secondary-nav-li.todo-menu p {
